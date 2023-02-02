@@ -24,6 +24,7 @@ export const theme = {
     },
     family: {
       sourceCode: "'Source Code Pro', monospace",
+      roboto: "'Roboto', sans-serif",
     },
   },
 };

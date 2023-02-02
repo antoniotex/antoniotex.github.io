@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { theme } from './theme.css';
 
 export default createGlobalStyle`
    * {
@@ -6,11 +7,15 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: ${theme.font.family.roboto};
   }
   
   body {
     -webkit-font-smoothing: antialiased;
     padding: 0 40px;
+    color: ${theme.colors.black};
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   button {
