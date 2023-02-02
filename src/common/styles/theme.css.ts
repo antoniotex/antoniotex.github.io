@@ -17,11 +17,13 @@ export const theme = {
     sizes: {
       xsmall: '1rem',
       small: '1.2rem',
-      medium: '1.6rem',
+      medium: '1.4rem',
       large: '2.4rem',
       xlarge: '3.2rem',
       xxlarge: '4.0rem',
     },
-    family: {},
+    family: {
+      sourceCode: "'Source Code Pro', monospace",
+    },
   },
 };
