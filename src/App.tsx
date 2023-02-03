@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import { AboutMe } from './pages/AboutMe';
 import { Skills } from './pages/Skills';
 import { Projects } from './pages/Projects';
+import { Career } from './pages/Career';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <AboutMe />
       <Skills />
       <Projects />
+      <Career />
       <GlobalStyles />
     </>
   );
