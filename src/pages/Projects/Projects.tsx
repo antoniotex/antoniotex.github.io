@@ -9,7 +9,14 @@ const Projects: React.FC = () => {
       title: 'Cocktails',
       description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
-      techs: ['React', 'Styled Components', 'TypeScript'],
+      techs: [
+        'React',
+        'Styled Components',
+        'TypeScript',
+        'React',
+        'Styled Components',
+        'TypeScript',
+      ],
       source: '',
       online: '',
     },

@@ -2,11 +2,10 @@ import styled from 'styled-components';
 import { theme } from '../../../../common/styles/theme.css';
 
 export const Container = styled.div`
-  width: 430px;
+  /* width: 430px; */
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 20px 50px ${theme.colors.black}55;
-  margin-bottom: 50px;
 `;
 
 export const Top = styled.div`
@@ -23,17 +22,18 @@ export const Top = styled.div`
 `;
 
 export const Title = styled.h4`
-  margin: 10px 0;
+  margin: 20px 0;
   font-size: ${theme.font.sizes.medium};
 `;
 
 export const Description = styled.p`
   font-size: ${theme.font.sizes.small};
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 `;
 
 export const TechContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export const TechPill = styled.div`
@@ -42,4 +42,6 @@ export const TechPill = styled.div`
   margin-right: 8px;
   padding: 4px 16px;
   border-radius: 16px;
+  white-space: nowrap;
+  margin-top: 8px;
 `;
