@@ -6,6 +6,7 @@ import { Skills } from './pages/Skills';
 import { Projects } from './pages/Projects';
 import { Career } from './pages/Career';
 import { Contact } from './pages/Contact';
+import { Footer } from './pages/Footer';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Projects />
       <Career />
       <Contact />
+      <Footer />
       <GlobalStyles />
     </>
   );
