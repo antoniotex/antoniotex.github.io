@@ -18,4 +18,10 @@ export const Container = styled.div`
     height: 150px;
     bottom: -200px;
   }
+
+  @media (max-width: 425px) {
+    ::after {
+      width: 2px;
+    }
+  }
 `;

@@ -65,7 +65,6 @@ export const ProfileSubTitle = styled.h1`
 
 export const ProfilePictureContainer = styled.div`
   position: relative;
-  border: 1px solid blue;
 
   ::before {
     position: absolute;
