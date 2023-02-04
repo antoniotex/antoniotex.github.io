@@ -1,7 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 import { theme } from './theme.css';
 
-export default createGlobalStyle`
+type GlobalProps = {
+  bg: string;
+};
+
+export default createGlobalStyle<GlobalProps>`
    * {
     margin: 0;
     padding: 0;
@@ -16,7 +20,8 @@ export default createGlobalStyle`
     color: ${theme.colors.black};
     max-width: 1500px;
     margin: 0 auto;
-    background-image: url('src/common/images/background/lines_bg.svg');
+    /* background-image: url('src/common/images/background/lines_bg.svg'); */
+    background-image: url(${(p: GlobalProps) => p.bg});
 
 @media (max-width: 1024px) {
     padding: 0 0;

@@ -7,6 +7,7 @@ import { Projects } from './pages/Projects';
 import { Career } from './pages/Career';
 import { Contact } from './pages/Contact';
 import { Footer } from './pages/Footer';
+import bgSVG from './common/images/background/lines_bg.svg';
 
 const App = () => {
   return (
@@ -19,7 +20,7 @@ const App = () => {
       <Career />
       <Contact />
       <Footer />
-      <GlobalStyles />
+      <GlobalStyles bg={bgSVG} />
     </>
   );
 };
