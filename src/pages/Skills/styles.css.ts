@@ -11,6 +11,7 @@ export const Container = styled.div`
   padding: 30px;
   box-shadow: 0 20px 50px ${theme.colors.black}55;
   border-radius: 16px;
+  background: ${theme.colors.white};
 `;
 
 export const TechText = styled.h3`

@@ -6,6 +6,7 @@ export const Container = styled.div`
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 20px 50px ${theme.colors.black}55;
+  background-color: #fff;
 `;
 
 export const Top = styled.div`

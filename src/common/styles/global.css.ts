@@ -16,6 +16,7 @@ export default createGlobalStyle`
     color: ${theme.colors.black};
     max-width: 1500px;
     margin: 0 auto;
+    background-image: url('src/common/images/background/lines_bg.svg');
   }
 
   button {
