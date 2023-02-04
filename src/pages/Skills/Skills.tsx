@@ -23,7 +23,7 @@ const Skills: React.FC = () => {
     <SectionTag num='02' title='tecnologias'>
       <S.Container>
         {skills.map((skill: Skills, index: number) => (
-          <S.Row>
+          <S.Row key={index}>
             <S.TechText>{skill.tech}</S.TechText>
             <S.Level key={index}>
               <S.LevelItem

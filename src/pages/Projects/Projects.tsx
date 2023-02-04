@@ -33,9 +33,9 @@ const Projects: React.FC = () => {
         <S.CardContainer>
           {/* {projects.map((project: Project, index: number) => ( */}
           <ProjectCard key={1} project={projects[0]} />
-          <ProjectCard key={1} project={projects[0]} />
-          <ProjectCard key={1} project={projects[0]} />
-          <ProjectCard key={1} project={projects[0]} />
+          <ProjectCard key={2} project={projects[0]} />
+          <ProjectCard key={3} project={projects[0]} />
+          <ProjectCard key={4} project={projects[0]} />
           {/* ))} */}
         </S.CardContainer>
       </S.Container>

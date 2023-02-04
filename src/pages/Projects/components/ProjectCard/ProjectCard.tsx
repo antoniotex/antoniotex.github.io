@@ -29,7 +29,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
       <S.Description>{project.description}</S.Description>
       <S.TechContainer>
         {project.techs.map((tech: string, index: number) => (
-          <S.TechPill>{tech}</S.TechPill>
+          <S.TechPill key={index}>{tech}</S.TechPill>
         ))}
       </S.TechContainer>
     </S.Container>
