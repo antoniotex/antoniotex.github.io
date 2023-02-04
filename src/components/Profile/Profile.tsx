@@ -1,4 +1,5 @@
 import * as S from './styles.css';
+import ProfileImage from '../../common/images/profile.jpeg';
 
 const Profile: React.FC = () => {
   return (
@@ -9,15 +10,12 @@ const Profile: React.FC = () => {
           <S.ProfileSubTitle>Desenvolvedor Frontend</S.ProfileSubTitle>
         </S.TitleContainer>
         <S.ProfilePictureContainer>
-          <S.ProfilePicture
-            src='src/common/images/profile.jpeg'
-            alt='Profile image'
-          />
+          <S.ProfilePicture src={ProfileImage} alt='Profile image' />
         </S.ProfilePictureContainer>
       </S.TitlePictureContainer>
       <S.ProfileDescription>
         I'm a full-stack web developer, making great stuff happen since 2012.
-        Currently building awesome tools for developers at Prezly.
+        Currently building awesome tools for developers at Foursys.
       </S.ProfileDescription>
       <S.ContactButton>Entre em contato</S.ContactButton>
     </S.Container>
