@@ -17,6 +17,10 @@ export const Role = styled.h4`
   color: ${theme.colors.primary};
   font-weight: ${theme.font.weight.semiBold};
   font-size: ${theme.font.sizes.medium};
+
+  @media (max-width: 768px) {
+    font-size: ${theme.font.sizes.xsmall};
+  }
 `;
 
 export const Company = styled(Role)`
