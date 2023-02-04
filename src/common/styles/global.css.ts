@@ -17,6 +17,10 @@ export default createGlobalStyle`
     max-width: 1500px;
     margin: 0 auto;
     background-image: url('src/common/images/background/lines_bg.svg');
+
+@media (max-width: 1024px) {
+    padding: 0 0;
+}
   }
 
   button {
