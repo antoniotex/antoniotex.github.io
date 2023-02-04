@@ -10,13 +10,17 @@ export const Container = styled.header`
   justify-content: flex-end;
 
   @media (max-width: 1024px) {
-    padding: 0 20px;
+    padding: 0 10px;
     background: ${theme.colors.white};
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 998;
     height: 50px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 0 5px;
   }
 `;
 
