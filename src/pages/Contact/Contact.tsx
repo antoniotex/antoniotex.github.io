@@ -5,7 +5,7 @@ import * as S from './styles.css';
 
 const Contact: React.FC = () => {
   return (
-    <SectionTag num='05' title='contato'>
+    <SectionTag num='05' title='contato' idItem='contato'>
       <S.Container>
         <S.Description>
           Lorem Ipsum is simply dummy text of the printing and typesetting

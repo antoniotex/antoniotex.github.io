@@ -5,11 +5,13 @@ type Props = {
   children: ReactElement;
   num: string;
   title: string;
+  idItem: string;
 };
 
-const SectionTag: React.FC<Props> = ({ children, num, title }) => {
+const SectionTag: React.FC<Props> = ({ children, num, title, idItem }) => {
+  console.log(idItem);
   return (
-    <S.Container>
+    <S.Container id={idItem}>
       <S.Open>
         <S.Number>{num}.</S.Number>
         <S.OpenText>{`<${title}>`}</S.OpenText>

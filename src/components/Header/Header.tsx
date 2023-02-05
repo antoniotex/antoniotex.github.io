@@ -14,23 +14,23 @@ const Header = () => {
     <S.Container>
       <S.NavBar top={menuTop}>
         <S.Menu>
-          <S.MenuItem>
+          <S.MenuItem href='#sobre'>
             <S.Number>01.</S.Number>
             <S.Link>{'<sobre mim>'}</S.Link>
           </S.MenuItem>
-          <S.MenuItem>
+          <S.MenuItem href='#tecnologias'>
             <S.Number>02.</S.Number>
-            <S.Link>{'<habilidades>'}</S.Link>
+            <S.Link>{'<tecnologias>'}</S.Link>
           </S.MenuItem>
-          <S.MenuItem>
+          <S.MenuItem href='#projetos'>
             <S.Number>03.</S.Number>
             <S.Link>{'<projetos>'}</S.Link>
           </S.MenuItem>
-          <S.MenuItem>
+          <S.MenuItem href='#experiencia'>
             <S.Number>04.</S.Number>
-            <S.Link>{'<experiência>'}</S.Link>
+            <S.Link>{'<experiencia>'}</S.Link>
           </S.MenuItem>
-          <S.MenuItem>
+          <S.MenuItem href='#contato'>
             <S.Number>05.</S.Number>
             <S.Link>{'<contato>'}</S.Link>
           </S.MenuItem>

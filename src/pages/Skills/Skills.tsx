@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <SectionTag num='02' title='tecnologias'>
+    <SectionTag num='02' title='tecnologias' idItem='tecnologias'>
       <S.Container>
         {skills.map((skill: Skills, index: number) => (
           <S.Row key={index}>

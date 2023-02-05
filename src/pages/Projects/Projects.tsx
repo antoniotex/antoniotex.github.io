@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <SectionTag num='03' title='projetos'>
+    <SectionTag num='03' title='projetos' idItem='projetos'>
       <S.Container>
         <S.SectionDescription>
           Uma pequena galeria com alguns projetos que gostei de desenvolver.

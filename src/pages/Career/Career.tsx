@@ -3,7 +3,7 @@ import * as S from './styles.css';
 
 const Career: React.FC = () => {
   return (
-    <SectionTag num='04' title='experiencia'>
+    <SectionTag num='04' title='experiencia' idItem='experiencia'>
       <S.Container>
         <S.CareerInfo>
           <S.Role>{`Desenvolvedor Frontend React`}</S.Role>

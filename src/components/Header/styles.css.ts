@@ -55,7 +55,7 @@ export const Menu = styled.ul`
   }
 `;
 
-export const MenuItem = styled.li`
+export const MenuItem = styled.a`
   padding: 16px 0;
   cursor: pointer;
   position: relative;

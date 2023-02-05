@@ -4,7 +4,7 @@ import * as S from './styles.css';
 const AboutMe: React.FC = () => {
   return (
     <S.Container>
-      <SectionTag num='01' title='sobre mim'>
+      <SectionTag num='01' title='sobre mim' idItem='sobre'>
         <S.AboutText>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
