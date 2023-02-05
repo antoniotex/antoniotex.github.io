@@ -114,3 +114,22 @@ export const SubmitButton = styled.button`
     color: ${theme.colors.black};
   }
 `;
+
+export const SubmittedContainer = styled.div`
+  width: 100%;
+  padding: 0 20px;
+`;
+
+export const SubmittedTitle = styled.h3`
+  color: ${theme.colors.primary};
+  text-align: center;
+`;
+
+export const SubmittedDescription = styled.p`
+  color: ${theme.colors.black};
+  text-align: center;
+  max-width: 300px;
+  font-size: ${theme.font.sizes.xsmall};
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;

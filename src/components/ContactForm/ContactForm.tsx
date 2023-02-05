@@ -1,11 +1,12 @@
 import { useForm } from 'react-hook-form';
 import * as S from './styles.css';
 import formspreeApi from '../../services/formspreeeApi';
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { AppContext } from '../../store/AppContext';
 
 const ContactForm: React.FC = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [name, setName] = useState('');
+  const { sendEmailMessage, loading, contact } = useContext(AppContext);
 
   const contactForm = useForm({
     mode: 'all',
@@ -16,25 +17,24 @@ const ContactForm: React.FC = () => {
     },
   });
 
-  const sendMessage = async (data: any) => {
-    setLoading(true);
-    try {
-      const response = await formspreeApi.post('contactForm', data);
-      console.log(response);
-      setSubmitted(true);
-      await contactForm.reset();
-    } catch (error) {
-    } finally {
-      setLoading(false);
+  useEffect(() => {
+    if (contact.submitted) {
+      setName(contactForm.watch().name.split(' ')[0]);
+      contactForm.reset();
     }
-  };
+  }, [contact.submitted]);
 
-  return submitted ? (
-    <button>Obrigado pessoal!</button>
+  return contact.submitted ? (
+    <S.SubmittedContainer>
+      <S.SubmittedTitle>Mensagem enviada</S.SubmittedTitle>
+      <S.SubmittedDescription>
+        Olá {name}, recebi sua mensagem e responderei o mais breve possível =)
+      </S.SubmittedDescription>
+    </S.SubmittedContainer>
   ) : (
     <S.Container
       onSubmit={contactForm.handleSubmit((data) => {
-        sendMessage(data);
+        sendEmailMessage(data);
       })}
     >
       <S.Title>Deixe uma mensagem</S.Title>
@@ -100,6 +100,12 @@ const ContactForm: React.FC = () => {
       <S.SubmitButton disabled={!contactForm.formState.isValid || loading}>
         {loading ? 'Enviando' : 'Enviar'}
       </S.SubmitButton>
+      <S.ErrorMessage
+        hidden={!contact.errorMessage}
+        style={{ textAlign: 'center', marginTop: 10 }}
+      >
+        {contact.errorMessage}
+      </S.ErrorMessage>
     </S.Container>
   );
 };
