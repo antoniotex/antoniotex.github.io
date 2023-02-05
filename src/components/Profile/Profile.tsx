@@ -16,8 +16,9 @@ const Profile: React.FC = () => {
         </S.ProfilePictureContainer>
       </S.TitlePictureContainer>
       <S.ProfileDescription>
-        I'm a full-stack web developer, making great stuff happen since 2012.
-        Currently building awesome tools for developers at Foursys.
+        Sou desenvolvedor web frontend, mas com grande bagagem no backend, sendo
+        útil em projetos que necessitem atuar nos 2 lados. Atualmente (2023) o
+        layoff me pegou e estou aberto a novas oportunidades.
       </S.ProfileDescription>
       <ModalButton title='Entre em contato'>
         <ContactForm />

@@ -6,15 +6,17 @@ const AboutMe: React.FC = () => {
     <S.Container>
       <SectionTag num='01' title='sobre mim' idItem='sobre'>
         <S.AboutText>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Desenvolvedor de sistemas com mais de 5 anos de experiência atuando em
+          projetos de grande porte. Grande vivência com desenvolvimento
+          responsivo, desenvolvimento mobile, criação e integração de API`s,
+          testes automatizados (unitários, de integração, e2e). <br />
+          <br /> Conhecimentos em: <br />
+          <br />
+          - Linguagens de Programação: Javascript, TypeScript, C# <br />
+          - Frontend: HTML, CSS, SCSS, React, React Native, VueJS, Angular 2+,
+          Redux, Styled Components, Storybook <br />- Backend: NodeJS, .NET
+          Core, SQL Server, MongoDB, Oracle, TypeORM, EF <br />- Testes: Jest,
+          React Testing Library, Cypress
         </S.AboutText>
       </SectionTag>
     </S.Container>
