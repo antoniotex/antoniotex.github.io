@@ -60,6 +60,22 @@ export const MenuItem = styled.a`
   cursor: pointer;
   position: relative;
   white-space: nowrap;
+  text-decoration: none;
+  :link {
+    text-decoration: none;
+  }
+
+  :visited {
+    text-decoration: none;
+  }
+
+  :hover {
+    text-decoration: none;
+  }
+
+  :active {
+    text-decoration: none;
+  }
 
   :after {
     position: absolute;
