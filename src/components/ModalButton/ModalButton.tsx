@@ -9,7 +9,7 @@ type ModalButtonProps = {
 };
 
 const ModalButton: React.FC<ModalButtonProps> = ({ children, title }) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const openModal = () => {
     setOpen(!open);

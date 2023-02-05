@@ -5,7 +5,7 @@ const ContactForm: React.FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, touchedFields, isValid },
+    formState: { errors, isValid },
   } = useForm({
     mode: 'all',
     defaultValues: {
