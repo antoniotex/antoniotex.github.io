@@ -5,6 +5,7 @@ export const theme = {
     gray: '#a7a7a7',
     lightGray: '#ededed',
     primary: '#646bff',
+    error: '#ff0000',
   },
   font: {
     weight: {
@@ -15,6 +16,7 @@ export const theme = {
       extraBold: 900,
     },
     sizes: {
+      xxsmall: '0.8rem',
       xsmall: '1rem',
       small: '1.2rem',
       medium: '1.4rem',
