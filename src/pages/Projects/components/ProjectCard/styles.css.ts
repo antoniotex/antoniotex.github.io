@@ -46,3 +46,7 @@ export const TechPill = styled.div`
   white-space: nowrap;
   margin-top: 8px;
 `;
+
+export const Link = styled.a`
+  cursor: pointer;
+`;

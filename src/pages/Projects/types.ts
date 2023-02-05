@@ -3,5 +3,5 @@ export type Project = {
   description: string;
   techs: string[];
   source: string;
-  online: string;
+  online?: string;
 };

@@ -6,19 +6,56 @@ import { Project } from './types';
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: 'Cocktails',
+      title: 'Portfolio',
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+        'Repositório para esta própria página, pois está em constante evolução e demonstra um pouco do meu jeito de codar',
       techs: [
         'React',
         'Styled Components',
         'TypeScript',
-        'React',
-        'Styled Components',
-        'TypeScript',
+        'React Hook Form',
+        'Conventional Commits',
+        'Vite',
+        'Media Queries',
       ],
-      source: '',
-      online: '',
+      source: 'https://github.com/antoniotex/portfolio',
+      online: 'https://antoniotx.dev/',
+    },
+    {
+      title: 'Online Store',
+      description:
+        'Projeto em evolução, e é um protótipo de uma página frontend construída com TDD e abrangendo todo o processo de compra e carrinho de um e-commerce',
+      techs: [
+        'Javascript',
+        'NextJs',
+        'ReactJs',
+        'E-commerce',
+        'TDD',
+        'Jest',
+        'Testing Library',
+      ],
+      source: 'https://github.com/antoniotex/online_store_next_jest',
+    },
+    {
+      title: 'Web Scrapper',
+      description:
+        'Gosto deste projeto, pois foi a primeira vez que criei um web scraper do zero e me ajudou a entender melhor como a web funciona.',
+      techs: ['Javascript', 'Web Scraper', 'Axios', 'Cheerio'],
+      source: 'https://github.com/antoniotex/desafio-b2w-dev-web',
+    },
+    {
+      title: 'Encontrados',
+      description:
+        'Projeto sendo desenvolvido para ser referência em pessoas desaparecidas. A ideia é concentrar em um só lugar informações, para facilitar as buscas pelos parentes',
+      techs: [
+        'ReactJs',
+        'React Native',
+        'NodeJs',
+        'Sequelize',
+        'AWS S3',
+        'Styled Components',
+      ],
+      source: 'https://github.com/antoniotex/encontrados',
     },
   ];
 
@@ -31,12 +68,9 @@ const Projects: React.FC = () => {
           tecnologias que tenho conhecimento
         </S.SectionDescription>
         <S.CardContainer>
-          {/* {projects.map((project: Project, index: number) => ( */}
-          <ProjectCard key={1} project={projects[0]} />
-          <ProjectCard key={2} project={projects[0]} />
-          <ProjectCard key={3} project={projects[0]} />
-          <ProjectCard key={4} project={projects[0]} />
-          {/* ))} */}
+          {projects.map((project: Project, index: number) => (
+            <ProjectCard key={index} project={project} />
+          ))}
         </S.CardContainer>
       </S.Container>
     </SectionTag>

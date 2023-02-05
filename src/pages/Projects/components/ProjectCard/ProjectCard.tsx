@@ -14,16 +14,29 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
     <S.Container>
       <S.Top>
         <FaRegFolder size={35} color={theme.colors.primary} />
-        <FiGithub
-          size={30}
-          color={theme.colors.black}
-          style={{ marginLeft: 20 }}
-        />
-        <CgWebsite
-          size={30}
-          color={theme.colors.black}
-          style={{ marginLeft: 20 }}
-        />
+        <S.Link href={project.source} target='_blank'>
+          <FiGithub
+            size={30}
+            color={theme.colors.black}
+            style={{ marginLeft: 20 }}
+          />
+        </S.Link>
+        <S.Link
+          style={{
+            display: `${project.online ? 'block' : 'none'}`,
+          }}
+          href={project.online}
+          target='_blank'
+        >
+          <CgWebsite
+            size={30}
+            color={theme.colors.black}
+            style={{
+              marginLeft: 20,
+              display: `${project.online ? 'block' : 'none'}`,
+            }}
+          />
+        </S.Link>
       </S.Top>
       <S.Title>{project.title}</S.Title>
       <S.Description>{project.description}</S.Description>
