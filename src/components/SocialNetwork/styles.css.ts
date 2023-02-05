@@ -26,3 +26,7 @@ export const Container = styled.div`
     }
   }
 `;
+
+export const Link = styled.a`
+  cursor: pointer;
+`;

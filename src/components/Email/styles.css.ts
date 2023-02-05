@@ -9,6 +9,7 @@ export const Container = styled.div`
   width: 35px;
   height: 270px;
   position: relative;
+  cursor: pointer;
 
   ::after {
     position: absolute;
