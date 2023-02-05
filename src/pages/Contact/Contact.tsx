@@ -1,3 +1,5 @@
+import { ContactForm } from '../../components/ContactForm';
+import { ModalButton } from '../../components/ModalButton';
 import { SectionTag } from '../../components/SectionTag';
 import * as S from './styles.css';
 
@@ -10,7 +12,9 @@ const Contact: React.FC = () => {
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s
         </S.Description>
-        <S.ModalButton>Mande um Oi!</S.ModalButton>
+        <ModalButton title='Entre em contato'>
+          <ContactForm />
+        </ModalButton>
       </S.Container>
     </SectionTag>
   );
