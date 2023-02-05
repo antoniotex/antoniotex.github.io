@@ -8,9 +8,9 @@ const Contact: React.FC = () => {
     <SectionTag num='05' title='contato' idItem='contato'>
       <S.Container>
         <S.Description>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
+          Estou aberto a novas oportunidades, tanto para períodos longos, quando
+          para contratos PJ / freelance. Entre em contato através do botão
+          abaixo e vamos desenvolver algo juntos!
         </S.Description>
         <ModalButton title='Entre em contato'>
           <ContactForm />
