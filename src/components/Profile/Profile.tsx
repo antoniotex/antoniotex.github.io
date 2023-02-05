@@ -1,5 +1,7 @@
 import * as S from './styles.css';
 import ProfileImage from '../../common/images/profile.jpeg';
+import { ModalButton } from '../ModalButton';
+import ContactForm from '../ContactForm/ContactForm';
 
 const Profile: React.FC = () => {
   return (
@@ -17,7 +19,9 @@ const Profile: React.FC = () => {
         I'm a full-stack web developer, making great stuff happen since 2012.
         Currently building awesome tools for developers at Foursys.
       </S.ProfileDescription>
-      <S.ContactButton>Entre em contato</S.ContactButton>
+      <ModalButton title='Entre em contato'>
+        <ContactForm />
+      </ModalButton>
     </S.Container>
   );
 };

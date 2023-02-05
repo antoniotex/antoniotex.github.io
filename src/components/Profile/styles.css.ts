@@ -107,9 +107,11 @@ export const ProfileDescription = styled.p`
   font-size: ${theme.font.sizes.medium};
   font-weight: ${theme.font.weight.normal};
   margin-top: 40px;
+  margin-bottom: 80px;
 
   @media (max-width: 425px) {
     margin-top: 20px;
+    margin-bottom: 40px;
     font-size: ${theme.font.sizes.small};
     text-align: justify;
   }
