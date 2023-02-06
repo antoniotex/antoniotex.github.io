@@ -8,10 +8,11 @@ type MenuProps = {
 export const Container = styled.header`
   display: flex;
   justify-content: flex-end;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 
   @media (max-width: 1024px) {
     padding: 0 10px;
-    background: ${theme.colors.white};
     position: fixed;
     top: 0;
     width: 100%;
@@ -28,6 +29,8 @@ export const NavBar = styled.nav<MenuProps>`
   width: fit-content;
   position: relative;
   transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -50,7 +53,7 @@ export const Menu = styled.ul`
   @media (max-width: 1024px) {
     flex-direction: column;
     align-items: flex-start;
-    background: ${theme.colors.white};
+    /* background: ${theme.colors.white}; */
     width: 100%;
   }
 `;
