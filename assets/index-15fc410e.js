@@ -323,7 +323,9 @@ Error generating stack: `+i.message+`
   }
 `,Yy=U.img`
   width: 250px;
-  height: 250px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0px -10px;
 
   @media (max-width: 1024px) {
     width: 60vw;
@@ -361,7 +363,7 @@ Error generating stack: `+i.message+`
   @media (max-width: 425px) {
     max-width: 100%;
   }
-`;const qy="/assets/profile-7083db7b.jpeg";function Zy(e){return En({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{d:"M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z",fill:"currentColor"}}]})(e)}function ev(e){return En({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M14 7C13.4477 7 13 7.44772 13 8V16C13 16.5523 13.4477 17 14 17H18C18.5523 17 19 16.5523 19 16V8C19 7.44772 18.5523 7 18 7H14ZM17 9H15V15H17V9Z",fill:"currentColor"}},{tag:"path",attr:{d:"M6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H10C10.5523 9 11 8.55228 11 8C11 7.44772 10.5523 7 10 7H6Z",fill:"currentColor"}},{tag:"path",attr:{d:"M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13H10C10.5523 13 11 12.5523 11 12C11 11.4477 10.5523 11 10 11H6Z",fill:"currentColor"}},{tag:"path",attr:{d:"M5 16C5 15.4477 5.44772 15 6 15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H6C5.44772 17 5 16.5523 5 16Z",fill:"currentColor"}},{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z",fill:"currentColor"}}]})(e)}U.div``;const tv=U.button`
+`;const qy="/assets/profile_2-94a6df29.jpg";function Zy(e){return En({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{d:"M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z",fill:"currentColor"}}]})(e)}function ev(e){return En({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M14 7C13.4477 7 13 7.44772 13 8V16C13 16.5523 13.4477 17 14 17H18C18.5523 17 19 16.5523 19 16V8C19 7.44772 18.5523 7 18 7H14ZM17 9H15V15H17V9Z",fill:"currentColor"}},{tag:"path",attr:{d:"M6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H10C10.5523 9 11 8.55228 11 8C11 7.44772 10.5523 7 10 7H6Z",fill:"currentColor"}},{tag:"path",attr:{d:"M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13H10C10.5523 13 11 12.5523 11 12C11 11.4477 10.5523 11 10 11H6Z",fill:"currentColor"}},{tag:"path",attr:{d:"M5 16C5 15.4477 5.44772 15 6 15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H6C5.44772 17 5 16.5523 5 16Z",fill:"currentColor"}},{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z",fill:"currentColor"}}]})(e)}U.div``;const tv=U.button`
   border: none;
   padding: 10px 20px;
   background: ${_.colors.primary};
@@ -726,19 +728,27 @@ Error generating stack: `+i.message+`
   :last-child {
     margin-bottom: 0px;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `,Wn=U.h4`
   color: ${_.colors.primary};
   font-weight: ${_.font.weight.semiBold};
   font-size: ${_.font.sizes.medium};
 
-  @media (max-width: 768px) {
-    font-size: ${_.font.sizes.xsmall};
+  @media (max-width: 1024px) {
+    font-size: ${_.font.sizes.small};
   }
 `,Br=U(Wn)`
-  color: ${_.colors.black};
+  color: ${_.colors.gray};
   margin-left: 4px;
   font-weight: ${_.font.weight.normal};
-`,fw=()=>P(Lo,{num:"04",title:"experiencia",idItem:"experiencia",children:te(cw,{children:[te(Vr,{children:[P(Wn,{children:"Desenvolvedor Frontend React"}),P(Br,{children:" @ Foursys. fev/2022 - fev/2023"})]}),te(Vr,{children:[P(Wn,{children:"Desenvolvedor Frontend React / React Native"}),P(Br,{children:" @ Dclick. set/2021 - fev/2022"})]}),te(Vr,{children:[P(Wn,{children:"Analista de Sistemas"}),P(Br,{children:" @ ACT Digital. jan/2021 - set/2021"})]}),te(Vr,{children:[P(Wn,{children:"Desenvolvedor Fullstack"}),P(Br,{children:" @ S2 Holding. ago/2020 - nov/2020"})]}),te(Vr,{children:[P(Wn,{children:"Desenvolvedor .NET Júnior"}),P(Br,{children:" @ Função Sistemas. ago/2019 - ago/2020"})]})]})}),dw=U.div`
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+`,fw=()=>P(Lo,{num:"04",title:"experiencia",idItem:"experiencia",children:te(cw,{children:[te(Vr,{children:[P(Wn,{children:"Desenvolvedor Frontend React"}),P(Br,{children:" @Foursys. fev/2022 - fev/2023"})]}),te(Vr,{children:[P(Wn,{children:"Desenvolvedor Frontend React / React Native"}),P(Br,{children:" @Dclick. set/2021 - fev/2022"})]}),te(Vr,{children:[P(Wn,{children:"Analista de Sistemas"}),P(Br,{children:" @ACT Digital. jan/2021 - set/2021"})]}),te(Vr,{children:[P(Wn,{children:"Desenvolvedor Fullstack"}),P(Br,{children:" @S2 Holding. ago/2020 - nov/2020"})]}),te(Vr,{children:[P(Wn,{children:"Desenvolvedor .NET Júnior"}),P(Br,{children:" @Função Sistemas. ago/2019 - ago/2020"})]})]})}),dw=U.div`
   display: flex;
   flex-direction: column;
   align-items: center;
