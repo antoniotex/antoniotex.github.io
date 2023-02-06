@@ -22,6 +22,28 @@ const Projects: React.FC = () => {
       online: 'https://antoniotx.dev/',
     },
     {
+      title: 'React Login Clean Arch',
+      description:
+        'Página de login em React desenvolvida utilizando TDD e Clean Architecture',
+      techs: ['ReactJs', 'SASS', 'Jest', 'Typescript', 'Clean Architecture'],
+      source: 'https://github.com/antoniotex/clean-react',
+    },
+    {
+      title: 'Node Api Clean Arch',
+      description:
+        'API em NodeJs desenvolvida utilizando TDD e Clean Architecture',
+      techs: [
+        'NodeJs',
+        'MongoDB',
+        'Jest',
+        'JWT',
+        'Clean Architecture',
+        'SOLID',
+        'API',
+      ],
+      source: 'https://github.com/antoniotex/clean-node-api',
+    },
+    {
       title: 'Online Store',
       description:
         'Projeto em evolução, e é um protótipo de uma página frontend construída com TDD e abrangendo todo o processo de compra e carrinho de um e-commerce',
