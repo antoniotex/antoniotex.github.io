@@ -17,8 +17,8 @@ const Profile: React.FC = () => {
       </S.TitlePictureContainer>
       <S.ProfileDescription>
         Sou desenvolvedor web frontend, mas com grande bagagem no backend, sendo
-        útil em projetos que necessitem atuar nos 2 lados. Atualmente (2023) o
-        layoff me pegou e estou aberto a novas oportunidades.
+        útil em projetos que necessitem atuar nos 2 lados. Atualmente (2023) a
+        demissão em me pegou e estou aberto a novas oportunidades.
       </S.ProfileDescription>
       <ModalButton title='Entre em contato'>
         <ContactForm />
