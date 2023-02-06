@@ -11,6 +11,10 @@ export const CareerInfo = styled.div`
   :last-child {
     margin-bottom: 0px;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Role = styled.h4`
@@ -18,13 +22,17 @@ export const Role = styled.h4`
   font-weight: ${theme.font.weight.semiBold};
   font-size: ${theme.font.sizes.medium};
 
-  @media (max-width: 768px) {
-    font-size: ${theme.font.sizes.xsmall};
+  @media (max-width: 1024px) {
+    font-size: ${theme.font.sizes.small};
   }
 `;
 
 export const Company = styled(Role)`
-  color: ${theme.colors.black};
+  color: ${theme.colors.gray};
   margin-left: 4px;
   font-weight: ${theme.font.weight.normal};
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 `;
