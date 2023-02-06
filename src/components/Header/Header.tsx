@@ -27,9 +27,7 @@ const Header = () => {
   }, []);
 
   return (
-    <S.Container
-      scroll={scrollPosition > 30 || (scrollPosition <= 30 && menuTop === 0)}
-    >
+    <S.Container scroll={scrollPosition > 30 && menuTop === -500}>
       <S.NavBar
         top={menuTop}
         scroll={scrollPosition > 30 || (scrollPosition <= 30 && menuTop === 0)}

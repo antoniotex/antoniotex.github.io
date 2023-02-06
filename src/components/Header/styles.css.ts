@@ -57,6 +57,7 @@ export const NavBar = styled.nav<MenuProps>`
     padding-top: 50px;
     width: 100%;
     top: ${(p: MenuProps) => p.top}px;
+    opacity: ${(p: MenuProps) => (p.top === 0 ? '1' : '0')};
     left: 0;
     z-index: 998;
   }
