@@ -1,11 +1,14 @@
 import * as S from './styles.css';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { theme } from '../../common/styles/theme.css';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { AppContext } from '../../store/AppContext';
 
 const Header = () => {
   const [menuTop, setMenuTop] = useState(-500);
   const [scrollPosition, setScrollPosition] = useState(0);
+
+  const { modal } = useContext(AppContext);
 
   const toggleMenu = () => {
     setMenuTop(menuTop === 0 ? -500 : 0);
@@ -24,8 +27,13 @@ const Header = () => {
   }, []);
 
   return (
-    <S.Container scroll={scrollPosition > 30}>
-      <S.NavBar top={menuTop} scroll={scrollPosition > 30}>
+    <S.Container
+      scroll={scrollPosition > 30 || (scrollPosition <= 30 && menuTop === 0)}
+    >
+      <S.NavBar
+        top={menuTop}
+        scroll={scrollPosition > 30 || (scrollPosition <= 30 && menuTop === 0)}
+      >
         <S.Menu>
           <S.MenuItem href='#sobre'>
             <S.Number>01.</S.Number>
