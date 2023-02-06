@@ -1,5 +1,5 @@
 import * as S from './styles.css';
-import ProfileImage from '../../common/images/profile.jpeg';
+import ProfileImage from '../../common/images/profile_2.jpg';
 import { ModalButton } from '../ModalButton';
 import ContactForm from '../ContactForm/ContactForm';
 

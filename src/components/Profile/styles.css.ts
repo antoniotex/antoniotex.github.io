@@ -95,7 +95,9 @@ export const ProfilePictureContainer = styled.div`
 
 export const ProfilePicture = styled.img`
   width: 250px;
-  height: 250px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0px -10px;
 
   @media (max-width: 1024px) {
     width: 60vw;
