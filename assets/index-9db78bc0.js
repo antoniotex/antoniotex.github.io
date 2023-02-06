@@ -88,9 +88,13 @@ Error generating stack: `+i.message+`
   }
 `,gg=U.header`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
 
   @media (max-width: 1024px) {
     padding: 0 10px;
@@ -110,6 +114,10 @@ Error generating stack: `+i.message+`
   transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
+  width: 1500px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
 
   @media (max-width: 1024px) {
     display: flex;
