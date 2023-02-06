@@ -11,6 +11,8 @@ import bgSVG from './common/images/background/lines_bg.svg';
 import AppContextProvider from './store/AppContext';
 
 const App = () => {
+  console.log(location);
+
   return (
     <AppContextProvider>
       <>
