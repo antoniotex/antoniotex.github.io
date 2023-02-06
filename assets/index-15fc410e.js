@@ -777,4 +777,4 @@ Error generating stack: `+i.message+`
   text-align: center;
   padding: 5px 0;
   color: ${_.colors.gray};
-`,yw=()=>P(mw,{children:P(gw,{children:"© Antonio Teixeira - 2023"})}),vw="/assets/lines_bg-57d39dde.svg",ww=()=>(console.log(location),P(Uy,{children:te(Wf,{children:[P(Cg,{}),P(Uv,{}),P(Gv,{}),P(qv,{}),P(aw,{}),P(fw,{}),P(hw,{}),P(yw,{}),P(mg,{bg:vw})]})}));_s.createRoot(document.getElementById("root")).render(P(ww,{}));
+`,yw=()=>P(mw,{children:P(gw,{children:"© Antonio Teixeira - 2023"})}),vw="/assets/lines_bg-57d39dde.svg",ww=()=>P(Uy,{children:te(Wf,{children:[P(Cg,{}),P(Uv,{}),P(Gv,{}),P(qv,{}),P(aw,{}),P(fw,{}),P(hw,{}),P(yw,{}),P(mg,{bg:vw})]})});_s.createRoot(document.getElementById("root")).render(P(ww,{}));
