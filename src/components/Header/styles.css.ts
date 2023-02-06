@@ -3,13 +3,19 @@ import { theme } from '../../common/styles/theme.css';
 
 type MenuProps = {
   top: number;
+  scroll: boolean;
 };
 
-export const Container = styled.header`
+type ContainerProps = {
+  scroll: boolean;
+};
+
+export const Container = styled.header<ContainerProps>`
   display: flex;
   justify-content: center;
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: ${(p: ContainerProps) =>
+    p.scroll ? 'blur(30px)' : 'none'};
+  backdrop-filter: ${(p: ContainerProps) => (p.scroll ? 'blur(30px)' : 'none')};
   position: fixed;
   top: 0;
   right: 0;
@@ -35,8 +41,9 @@ export const NavBar = styled.nav<MenuProps>`
   width: fit-content;
   position: relative;
   transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: ${(p: MenuProps) =>
+    p.scroll ? 'blur(30px)' : 'none'};
+  backdrop-filter: ${(p: MenuProps) => (p.scroll ? 'blur(30px)' : 'none')};
   width: 1500px;
   display: flex;
   justify-content: flex-end;

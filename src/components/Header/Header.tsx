@@ -1,18 +1,31 @@
 import * as S from './styles.css';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { theme } from '../../common/styles/theme.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [menuTop, setMenuTop] = useState(-500);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const toggleMenu = () => {
     setMenuTop(menuTop === 0 ? -500 : 0);
   };
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <S.Container>
-      <S.NavBar top={menuTop}>
+    <S.Container scroll={scrollPosition > 30}>
+      <S.NavBar top={menuTop} scroll={scrollPosition > 30}>
         <S.Menu>
           <S.MenuItem href='#sobre'>
             <S.Number>01.</S.Number>
