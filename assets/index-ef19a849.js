@@ -103,6 +103,7 @@ Error generating stack: `+i.message+`
     width: 100%;
     z-index: 998;
     height: 50px;
+    justify-content: flex-end;
   }
 
   @media (max-width: 425px) {
