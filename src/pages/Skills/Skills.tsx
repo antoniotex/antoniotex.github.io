@@ -13,10 +13,12 @@ const Skills: React.FC = () => {
     { tech: 'Typescript', level: 5 },
     { tech: 'ReactJs', level: 5 },
     { tech: 'React Native', level: 4 },
-    { tech: 'Angular 2+', level: 3 },
+    { tech: 'Storybook', level: 4 },
     { tech: 'Jest', level: 4 },
     { tech: 'Styled Components', level: 5 },
     { tech: 'NodeJs', level: 4 },
+    { tech: 'C# .NET Core', level: 4 },
+    { tech: 'Angular 2+', level: 3 },
   ];
 
   return (
