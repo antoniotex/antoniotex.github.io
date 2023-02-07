@@ -100,6 +100,7 @@ export const MenuItem = styled.a`
 
   :after {
     position: absolute;
+    top: 4px;
     left: 0px;
     content: '';
     height: 40px;
