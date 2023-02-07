@@ -168,6 +168,7 @@ Error generating stack: `+i.message+`
 
   :after {
     position: absolute;
+    top: 4px;
     left: 0px;
     content: '';
     height: 40px;
