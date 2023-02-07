@@ -18,9 +18,9 @@ export const Description = styled.p`
 `;
 
 export const ModalButton = styled.button`
-  background: ${theme.colors.primary};
+  background: ${({ theme }) => theme.colors.primary};
   border: none;
-  color: ${theme.colors.white};
+  color: ${({ theme }) => theme.colors.secondary};
   font-weight: ${theme.font.weight.semiBold};
   font-size: ${theme.font.sizes.medium};
   padding: 20px 60px;

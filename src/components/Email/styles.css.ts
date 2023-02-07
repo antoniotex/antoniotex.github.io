@@ -14,7 +14,7 @@ export const Container = styled.div`
   ::after {
     position: absolute;
     content: '';
-    background: ${theme.colors.primary};
+    background: ${({ theme }) => theme.colors.primary};
     width: 3px;
     height: 150px;
     bottom: -200px;
@@ -29,7 +29,7 @@ export const Container = styled.div`
 `;
 
 export const EmailText = styled.a`
-  color: ${theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   font-family: ${theme.font.family.sourceCode};
   font-weight: ${theme.font.weight.bold};
   font-size: ${theme.font.sizes.small};

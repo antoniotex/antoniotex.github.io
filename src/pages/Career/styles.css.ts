@@ -18,7 +18,7 @@ export const CareerInfo = styled.div`
 `;
 
 export const Role = styled.h4`
-  color: ${theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: ${theme.font.weight.semiBold};
   font-size: ${theme.font.sizes.medium};
 
@@ -28,7 +28,7 @@ export const Role = styled.h4`
 `;
 
 export const Company = styled(Role)`
-  color: ${theme.colors.gray};
+  color: ${({ theme }) => theme.colors.gray};
   margin-left: 4px;
   font-weight: ${theme.font.weight.normal};
 

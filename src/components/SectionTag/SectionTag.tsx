@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import { useTheme } from 'styled-components';
 import * as S from './styles.css';
 
 type Props = {
@@ -9,7 +10,6 @@ type Props = {
 };
 
 const SectionTag: React.FC<Props> = ({ children, num, title, idItem }) => {
-  console.log(idItem);
   return (
     <S.Container id={idItem}>
       <S.Open>

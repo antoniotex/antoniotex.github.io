@@ -1,11 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 import { theme } from './theme.css';
+import bg from '../images/background/lines_bg.svg';
+import bgDark from '../images/background/lines_bg-dark.svg';
 
-type GlobalProps = {
-  bg: string;
-};
-
-export default createGlobalStyle<GlobalProps>`
+export default createGlobalStyle`
    * {
     margin: 0;
     padding: 0;
@@ -17,15 +15,15 @@ export default createGlobalStyle<GlobalProps>`
   body {
     -webkit-font-smoothing: antialiased;
     padding: 0 40px;
-    color: ${theme.colors.black};
+    color: ${({ theme }) => theme.colors.text};
     max-width: 1500px;
     margin: 0 auto;
-    /* background-image: url('src/common/images/background/lines_bg.svg'); */
-    background-image: url(${(p: GlobalProps) => p.bg});
+    background-image: url(${(p: any) =>
+      p.theme.title == 'dark' ? bgDark : bg});
 
-@media (max-width: 1024px) {
-    padding: 0 0;
-}
+    @media (max-width: 1024px) {
+        padding: 0 0;
+    }
   }
 
   button {

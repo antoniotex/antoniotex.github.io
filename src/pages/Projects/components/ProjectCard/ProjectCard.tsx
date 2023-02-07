@@ -3,23 +3,21 @@ import * as S from './styles.css';
 import { FaRegFolder } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { CgWebsite } from 'react-icons/cg';
-import { theme } from '../../../../common/styles/theme.css';
+import { useTheme } from 'styled-components';
 
 type Props = {
   project: Project;
 };
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
+  const { colors } = useTheme();
+
   return (
     <S.Container>
       <S.Top>
-        <FaRegFolder size={35} color={theme.colors.primary} />
+        <FaRegFolder size={35} color={colors.primary} />
         <S.Link href={project.source} target='_blank'>
-          <FiGithub
-            size={30}
-            color={theme.colors.black}
-            style={{ marginLeft: 20 }}
-          />
+          <FiGithub size={30} color={colors.text} style={{ marginLeft: 20 }} />
         </S.Link>
         <S.Link
           style={{
@@ -30,7 +28,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         >
           <CgWebsite
             size={30}
-            color={theme.colors.black}
+            color={colors.text}
             style={{
               marginLeft: 20,
               display: `${project.online ? 'block' : 'none'}`,

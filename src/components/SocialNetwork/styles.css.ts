@@ -13,7 +13,7 @@ export const Container = styled.div`
   ::after {
     position: absolute;
     content: '';
-    background: ${theme.colors.primary};
+    background: ${({ theme }) => theme.colors.primary};
     width: 3px;
     height: 150px;
     bottom: -200px;

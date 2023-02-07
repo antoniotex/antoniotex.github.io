@@ -8,11 +8,19 @@ import { Career } from './pages/Career';
 import { Contact } from './pages/Contact';
 import { Footer } from './pages/Footer';
 import bgSVG from './common/images/background/lines_bg.svg';
-import AppContextProvider from './store/AppContext';
+import bgSVGDark from './common/images/background/lines_bg-dark.svg';
+import AppContextProvider, { AppContext } from './store/AppContext';
+import { DefaultTheme, ThemeProvider, useTheme } from 'styled-components';
+import light from './common/styles/themes/light';
+import usePersistedState from './hooks/usePersistedState';
+import dark from './common/styles/themes/dark';
+import { useContext } from 'react';
 
 const App = () => {
+  const { theme } = useContext(AppContext);
+
   return (
-    <AppContextProvider>
+    <ThemeProvider theme={theme}>
       <>
         <Header />
         <Home />
@@ -22,9 +30,9 @@ const App = () => {
         <Career />
         <Contact />
         <Footer />
-        <GlobalStyles bg={bgSVG} />
+        <GlobalStyles />
       </>
-    </AppContextProvider>
+    </ThemeProvider>
   );
 };
 

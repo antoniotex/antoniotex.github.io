@@ -5,8 +5,8 @@ export const Container = styled.div`
   /* width: 430px; */
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 20px 50px ${theme.colors.black}55;
-  background-color: #fff;
+  box-shadow: 0 20px 50px ${({ theme }) => theme.colors.text}55;
+  background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const Top = styled.div`
@@ -38,7 +38,7 @@ export const TechContainer = styled.div`
 `;
 
 export const TechPill = styled.div`
-  background: ${theme.colors.lightGray};
+  background: ${({ theme }) => theme.colors.lightGray};
   font-weight: ${theme.font.weight.normal};
   margin-right: 8px;
   padding: 4px 16px;

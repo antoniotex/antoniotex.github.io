@@ -15,7 +15,7 @@ export const Container = styled.form`
 `;
 
 export const Title = styled.h2`
-  color: ${theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: ${theme.font.weight.bold};
   font-size: ${theme.font.sizes.large};
   text-align: center;
@@ -43,10 +43,10 @@ export const InputContainer = styled.div`
 `;
 
 export const Label = styled.label`
-  color: ${theme.colors.black};
+  color: ${({ theme }) => theme.colors.text};
   font-weight: ${theme.font.weight.semiBold};
   font-size: ${theme.font.sizes.xxsmall};
-  background: ${theme.colors.white};
+  background: ${({ theme }) => theme.colors.secondary};
   width: fit-content;
   padding: 0 5px;
   position: absolute;
@@ -56,43 +56,43 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   border: none;
-  border: 1px solid ${theme.colors.gray};
+  border: 1px solid ${({ theme }) => theme.colors.gray};
   height: 40px;
   border-radius: 10px;
   outline: none;
-  color: ${theme.colors.black};
+  color: ${({ theme }) => theme.colors.text};
   font-size: ${theme.font.sizes.xsmall};
   background: none;
   background-color: none;
   padding: 5px;
 
   :focus {
-    outline: 1px solid ${theme.colors.primary};
+    outline: 1px solid ${({ theme }) => theme.colors.primary};
   }
 `;
 
 export const TextArea = styled.textarea`
   border: none;
-  border: 1px solid ${theme.colors.gray};
+  border: 1px solid ${({ theme }) => theme.colors.gray};
   height: 100px;
   max-width: 100%;
   min-width: 100%;
   max-height: 60vh;
   border-radius: 10px;
   outline: none;
-  color: ${theme.colors.black};
+  color: ${({ theme }) => theme.colors.text};
   font-size: ${theme.font.sizes.xsmall};
   padding: 8px 5px;
   background: none;
   background-color: none;
 
   :focus {
-    outline: 1.5px solid ${theme.colors.primary};
+    outline: 1.5px solid ${({ theme }) => theme.colors.primary};
   }
 `;
 
 export const ErrorMessage = styled.p`
-  color: ${theme.colors.error};
+  color: ${({ theme }) => theme.colors.error};
   font-size: ${theme.font.sizes.xxsmall};
   margin-left: 4px;
   margin-top: 2px;
@@ -103,15 +103,15 @@ export const SubmitButton = styled.button`
   border: none;
   padding: 15px 40px;
   font-size: ${theme.font.sizes.xsmall};
-  color: ${theme.colors.white};
-  background: ${theme.colors.primary};
+  color: ${({ theme }) => theme.colors.secondary};
+  background: ${({ theme }) => theme.colors.primary};
   border-radius: 40px;
   margin: 0 auto;
   margin-top: 20px;
 
   :disabled {
-    background: ${theme.colors.gray};
-    color: ${theme.colors.black};
+    background: ${({ theme }) => theme.colors.gray};
+    color: ${({ theme }) => theme.colors.text};
   }
 `;
 
@@ -121,12 +121,12 @@ export const SubmittedContainer = styled.div`
 `;
 
 export const SubmittedTitle = styled.h3`
-  color: ${theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   text-align: center;
 `;
 
 export const SubmittedDescription = styled.p`
-  color: ${theme.colors.black};
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
   max-width: 300px;
   font-size: ${theme.font.sizes.xsmall};

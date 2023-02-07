@@ -1,9 +1,14 @@
 import * as S from './styles.css';
-import ProfileImage from '../../common/images/profile_2.jpg';
+import ProfileImage from '../../common/images/profile_light.png';
+import ProfileImageDark from '../../common/images/profile_dark.png';
+
 import { ModalButton } from '../ModalButton';
 import ContactForm from '../ContactForm/ContactForm';
+import { useTheme } from 'styled-components';
 
 const Profile: React.FC = () => {
+  const { title } = useTheme();
+
   return (
     <S.Container>
       <S.TitlePictureContainer>
@@ -12,7 +17,10 @@ const Profile: React.FC = () => {
           <S.ProfileSubTitle>Desenvolvedor Frontend</S.ProfileSubTitle>
         </S.TitleContainer>
         <S.ProfilePictureContainer>
-          <S.ProfilePicture src={ProfileImage} alt='Profile image' />
+          <S.ProfilePicture
+            src={title === 'light' ? ProfileImage : ProfileImageDark}
+            alt='Profile image'
+          />
         </S.ProfilePictureContainer>
       </S.TitlePictureContainer>
       <S.ProfileDescription>

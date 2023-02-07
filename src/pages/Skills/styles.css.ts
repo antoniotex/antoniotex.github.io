@@ -3,15 +3,16 @@ import { theme } from '../../common/styles/theme.css';
 
 type LevelItemProps = {
   opacity: string;
+  theme: any;
 };
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 30px;
-  box-shadow: 0 20px 50px ${theme.colors.black}55;
+  box-shadow: 0 20px 50px ${({ theme }) => theme.colors.text}55;
   border-radius: 16px;
-  background: ${theme.colors.white};
+  background: ${({ theme }) => theme.colors.secondary};
 
   @media (max-width: 768px) {
     padding: 10px;
@@ -70,14 +71,14 @@ export const LevelItem = styled.div<LevelItemProps>`
   border-radius: 8px;
   margin-left: 16px;
   background: ${(p: LevelItemProps) =>
-    p.opacity === '00' ? theme.colors.lightGray : 'none'};
+    p.opacity === '00' ? p.theme.colors.lightGray : 'none'};
 
   ::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background: ${theme.colors.primary}${(p: LevelItemProps) => p.opacity};
+    background: ${({ theme }) => theme.colors.primary}${(p: LevelItemProps) => p.opacity};
     border-radius: 8px;
   }
 

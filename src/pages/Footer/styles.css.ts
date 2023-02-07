@@ -6,5 +6,5 @@ export const Container = styled.footer``;
 export const Text = styled.p`
   text-align: center;
   padding: 5px 0;
-  color: ${theme.colors.gray};
+  color: ${({ theme }) => theme.colors.gray};
 `;

@@ -38,7 +38,7 @@ export const TitleContainer = styled.div`
 export const ProfileTitle = styled.h1`
   font-size: ${theme.font.sizes.xxlarge};
   font-weight: ${theme.font.weight.extraBold};
-  color: ${theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
 
   @media (max-width: 1024px) {
     font-size: ${theme.font.sizes.large};
@@ -69,7 +69,7 @@ export const ProfilePictureContainer = styled.div`
   ::before {
     position: absolute;
     content: '';
-    background: ${theme.colors.primary};
+    background: ${({ theme }) => theme.colors.primary};
     width: 100%;
     height: 4px;
     top: -15px;
@@ -79,7 +79,7 @@ export const ProfilePictureContainer = styled.div`
   ::after {
     position: absolute;
     content: '';
-    background: ${theme.colors.primary};
+    background: ${({ theme }) => theme.colors.primary};
     width: 4px;
     height: 100%;
     top: -15px;
@@ -121,9 +121,9 @@ export const ProfileDescription = styled.p`
 
 export const ContactButton = styled.button`
   margin-top: 80px;
-  background: ${theme.colors.primary};
+  background: ${({ theme }) => theme.colors.primary};
   border: none;
-  color: ${theme.colors.white};
+  color: ${({ theme }) => theme.colors.secondary};
   font-size: ${theme.font.sizes.medium};
   padding: 20px 30px;
   border-radius: 16px;

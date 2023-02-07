@@ -10,8 +10,8 @@ export const Container = styled.div``;
 export const OpenButton = styled.button`
   border: none;
   padding: 10px 20px;
-  background: ${theme.colors.primary};
-  color: ${theme.colors.white};
+  background: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.secondary};
   font-size: ${theme.font.sizes.small};
   border-radius: 8px;
 `;
@@ -23,7 +23,7 @@ export const ModalFull = styled.div<ModalFullProps>`
   width: 100vw;
   height: 100vh;
   z-index: 999;
-  background-color: ${theme.colors.black}ee;
+  background-color: ${({ theme }) => theme.colors.text}ee;
   display: ${(p: ModalFullProps) => (p.open ? 'flex' : 'none')};
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@ export const ModalHeader = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  background: ${theme.colors.white};
+  background: ${({ theme }) => theme.colors.secondary};
   border-radius: 16px;
   min-width: 200px;
   min-height: 100px;

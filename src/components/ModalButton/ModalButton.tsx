@@ -1,6 +1,6 @@
-import { ReactElement, useContext, useState } from 'react';
+import { ReactElement, useContext } from 'react';
 import { CgClose } from 'react-icons/cg';
-import { theme } from '../../common/styles/theme.css';
+import { useTheme } from 'styled-components';
 import { AppContext } from '../../store/AppContext';
 import * as S from './styles.css';
 
@@ -14,6 +14,8 @@ const ModalButton: React.FC<ModalButtonProps> = ({ children, title }) => {
     modal: { open, toggleModal },
   } = useContext(AppContext);
 
+  const { colors } = useTheme();
+
   return (
     <>
       <S.OpenButton onClick={toggleModal}>{title}</S.OpenButton>
@@ -23,7 +25,7 @@ const ModalButton: React.FC<ModalButtonProps> = ({ children, title }) => {
             <CgClose
               style={{ cursor: 'pointer' }}
               onClick={toggleModal}
-              color={theme.colors.black}
+              color={colors.text}
               size={25}
             />
           </S.ModalHeader>

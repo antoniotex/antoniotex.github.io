@@ -42,13 +42,13 @@ export const OpenText = styled.h2`
 `;
 
 export const Number = styled(OpenText)`
-  color: ${theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: ${theme.font.weight.normal};
   margin-right: 16px;
 `;
 
 export const Close = styled(OpenText)`
-  color: ${theme.colors.gray};
+  color: ${({ theme }) => theme.colors.gray};
   align-self: flex-end;
   margin-top: 40px;
   @media (max-width: 768px) {
