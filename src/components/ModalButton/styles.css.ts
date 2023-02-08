@@ -20,10 +20,10 @@ export const ModalFull = styled.div<ModalFullProps>`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: 999;
-  background-color: ${({ theme }) => theme.colors.text}ee;
+  background-color: #00000099;
   display: ${(p: ModalFullProps) => (p.open ? 'flex' : 'none')};
   justify-content: center;
   align-items: center;

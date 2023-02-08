@@ -46,7 +46,7 @@ const ContactForm: React.FC = () => {
           placeholder='Ex.: Ana Lucia'
           disabled={loading}
           {...contactForm.register('name', {
-            required: 'O seu nome é campo obrigatório',
+            required: 'O campo nome é obrigatório',
             minLength: {
               value: 2,
               message: 'O nome deve ter entre 2 e 100 caracteres',
@@ -69,7 +69,7 @@ const ContactForm: React.FC = () => {
           placeholder='Ex.: anabanana@gmail.com'
           disabled={loading}
           {...contactForm.register('email', {
-            required: 'O endereço de e-mail é um campo obrigatório',
+            required: 'O campo endereço de e-mail é obrigatório',
             pattern: {
               value: /\S+@\S+\.\S+/,
               message: 'Por favor, digite um e-mail válido',

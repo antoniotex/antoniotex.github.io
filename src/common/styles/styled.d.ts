@@ -12,6 +12,7 @@ declare module 'styled-components' {
       gray: string;
       lightGray: string;
       error: string;
+      shadow: string;
     };
   }
 }

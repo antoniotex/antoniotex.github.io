@@ -56,7 +56,7 @@ export const NavBar = styled.nav<MenuProps>`
     display: flex;
     height: max-content;
     position: absolute;
-    box-shadow: 0 20px 50px ${({ theme }) => theme.colors.text}55;
+    box-shadow: 0 20px 50px ${({ theme }) => theme.colors.shadow};
     padding-top: 50px;
     width: 100%;
     top: ${(p: MenuProps) => p.top}px;

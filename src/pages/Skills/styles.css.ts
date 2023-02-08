@@ -10,7 +10,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 30px;
-  box-shadow: 0 20px 50px ${({ theme }) => theme.colors.text}55;
+  box-shadow: 0 20px 50px ${({ theme }) => theme.colors.shadow};
   border-radius: 16px;
   background: ${({ theme }) => theme.colors.secondary};
 
