@@ -52,6 +52,7 @@ export const Label = styled.label`
   position: absolute;
   left: 15px;
   top: -8px;
+  white-space: nowrap;
 `;
 
 export const Input = styled.input`
