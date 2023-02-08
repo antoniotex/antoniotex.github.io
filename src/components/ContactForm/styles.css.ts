@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../common/styles/theme.css';
 
 export const Container = styled.form`
-  width: 100vw;
+  width: 95vw;
   max-width: 500px;
   display: flex;
   flex-direction: column;
