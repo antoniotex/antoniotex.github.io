@@ -510,6 +510,7 @@ Error generating stack: `+i.message+`
   position: absolute;
   left: 15px;
   top: -8px;
+  white-space: nowrap;
 `,Mf=I.input`
   border: none;
   border: 1px solid ${({theme:e})=>e.colors.gray};
