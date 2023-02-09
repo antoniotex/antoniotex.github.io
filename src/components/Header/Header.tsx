@@ -1,10 +1,11 @@
 import * as S from './styles.css';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { theme } from '../../common/styles/theme.css';
 import { useContext, useEffect, useState } from 'react';
 import { AppContext } from '../../store/AppContext';
 import { useTheme } from 'styled-components';
 import { useTranslation } from 'react-i18next';
+import BrazilFlag from '../../common/images/brazil.png';
+import UsaFlag from '../../common/images/usa.png';
 
 const Header = () => {
   const [menuTop, setMenuTop] = useState(-500);
@@ -25,6 +26,10 @@ const Header = () => {
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
+  };
+
+  const handleLanguage = () => {
+    changeLanguage(language === 'pt' ? 'en' : 'pt');
   };
 
   useEffect(() => {
@@ -67,10 +72,16 @@ const Header = () => {
             </S.MenuItem>
           </S.Menu>
         </S.NavBar>
-        <S.ToogleDarkMode onClick={toggleTheme}>
-          <span>ON</span>
-          <span>OFF</span>
-        </S.ToogleDarkMode>
+        <S.Configs>
+          <S.ToogleDarkMode onClick={toggleTheme}>
+            <span>ON</span>
+            <span>OFF</span>
+          </S.ToogleDarkMode>
+          <S.SelectLanguage
+            onClick={handleLanguage}
+            src={language === 'pt' ? BrazilFlag : UsaFlag}
+          />
+        </S.Configs>
       </S.NavContainer>
       <S.Hamburger onClick={toggleMenu}>
         <AiOutlineMenu size={35} color={colors.text} />

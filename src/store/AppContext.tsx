@@ -1,4 +1,3 @@
-import { AxiosError } from 'axios';
 import React, { createContext, ReactElement, useState } from 'react';
 import { DefaultTheme } from 'styled-components';
 import dark from '../common/styles/themes/dark';
@@ -48,6 +47,7 @@ const AppContextProvider: React.FC<ContextProvider> = ({ children }) => {
   const [errorMessage, setErrorMessage] = useState('');
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
+  const [language, setLanguage] = usePersistedState<string>('language', 'pt');
 
   const toggleModal = () => {
     if (!open) {
@@ -55,6 +55,10 @@ const AppContextProvider: React.FC<ContextProvider> = ({ children }) => {
     }
 
     setOpen(!open);
+  };
+
+  const toggleLanguage = (language: string) => {
+    setLanguage(language);
   };
 
   const toggleTheme = () => {

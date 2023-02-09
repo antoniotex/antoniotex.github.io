@@ -49,7 +49,7 @@ export const NavBar = styled.nav<MenuProps>`
   /* width: 1500px; */
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 45px;
   /* border: 1px solid yellow; */
 
   @media (max-width: 1024px) {
@@ -170,7 +170,7 @@ export const ToogleDarkMode = styled.button`
   height: 34px;
   border-radius: 20px;
   border: none;
-  margin-top: 10px;
+  margin-right: 10px;
   position: relative;
   background: ${({ theme }) => theme.colors.text};
   display: flex;
@@ -204,7 +204,7 @@ export const ToogleDarkMode = styled.button`
     content: '';
     width: 25px;
     height: 25px;
-    top: 5px;
+    top: 4px;
     left: ${({ theme }) => (theme.title === 'dark' ? '30px' : '5px')};
     border-radius: 15px;
     background: ${({ theme }) => theme.colors.primary};
@@ -218,9 +218,20 @@ export const NavContainer = styled.div`
   padding-right: 40px;
   width: 100%;
   justify-content: space-between;
+  /* border: 1px solid green; */
 
   @media (max-width: 1024px) {
     justify-content: flex-end;
     padding-right: 0px;
   }
+`;
+
+export const SelectLanguage = styled.img`
+  width: 35px;
+  cursor: pointer;
+`;
+
+export const Configs = styled.div`
+  display: flex;
+  align-items: center;
 `;
