@@ -87,11 +87,7 @@ const Projects: React.FC = () => {
   return (
     <SectionTag num='03' title={t('section.projects')} idItem='projetos'>
       <S.Container>
-        <S.SectionDescription>
-          Uma pequena galeria com alguns projetos que gostei de desenvolver.
-          Através do meu Github você conseguirá ir mais a fundo nas stacks e
-          tecnologias que tenho conhecimento
-        </S.SectionDescription>
+        <S.SectionDescription>{t('projects.description')}</S.SectionDescription>
         <S.CardContainer>
           {projects.map((project: Project, index: number) => (
             <ProjectCard key={index} project={project} />
