@@ -26,6 +26,22 @@
     },
     "projects": {
       "description": "Uma pequena galeria com alguns projetos que gostei de desenvolver. Através do meu Github você conseguirá ir mais a fundo nas stacks e tecnologias que tenho conhecimento."
+    },
+    "career": {
+      "month": {
+        "jan": "jan",
+        "feb": "fev",
+        "aug": "ago",
+        "sep": "set",
+        "nov": "nov"
+      },
+      "role": {
+        "foursys": "Desenvolvedor Frontend React",
+        "dclick": "Desenvolvedor Frontend React / React Native",
+        "act": "Analista de Sistemas",
+        "s2": "Desenvolvedor Fullstack",
+        "funcao": "Desenvolvedor .NET Júnior"
+      }
     }
   }
 }
