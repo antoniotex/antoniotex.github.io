@@ -210,6 +210,10 @@ export const ToogleDarkMode = styled.button`
     background: ${({ theme }) => theme.colors.primary};
     transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
+
+  :hover::before {
+    transform: scale(1.1);
+  }
 `;
 
 export const NavContainer = styled.div`
@@ -229,6 +233,11 @@ export const NavContainer = styled.div`
 export const SelectLanguage = styled.img`
   width: 35px;
   cursor: pointer;
+  transition: 0.2s;
+
+  :hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const Configs = styled.div`
