@@ -20,6 +20,9 @@
       "projects": "projetos",
       "career": "experiência",
       "contact": "contato"
+    },
+    "about": {
+      "description": "Desenvolvedor de sistemas com mais de 5 anos de experiência atuando em projetos de grande porte. Grande vivência com desenvolvimento responsivo, desenvolvimento mobile, criação e integração de API`s, testes automatizados (unitários, de integração, e2e). \n\nConhecimentos em:\n\n- Linguagens de Programação: Javascript, TypeScript, C#\n- Frontend: HTML, CSS, SCSS, React, React Native, VueJS, Angular 2+, Redux, Styled Components, Storybook\n- Backend: NodeJS, .NET Core, SQL Server, MongoDB, Oracle, TypeORM, EF\n- Testes: Jest, React Testing Library, Cypress"
     }
   }
 }
