@@ -115,7 +115,6 @@ export const ProfileDescription = styled.p`
     margin-top: 20px;
     margin-bottom: 40px;
     font-size: ${theme.font.sizes.small};
-    text-align: justify;
   }
 `;
 
