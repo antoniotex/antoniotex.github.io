@@ -422,7 +422,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     margin-top: 20px;
     margin-bottom: 40px;
     font-size: ${J.font.sizes.small};
-    text-align: justify;
   }
 `;$.button`
   margin-top: 80px;
