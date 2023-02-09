@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import { SectionTag } from '../../components/SectionTag';
 import * as S from './styles.css';
 
 const Career: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
-    <SectionTag num='04' title='experiencia' idItem='experiencia'>
+    <SectionTag num='04' title={t('section.career')} idItem='experiencia'>
       <S.Container>
         <S.CareerInfo>
           <S.Role>{`Desenvolvedor Frontend React`}</S.Role>

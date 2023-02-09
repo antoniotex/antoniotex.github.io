@@ -13,6 +13,13 @@
     },
     "contact": {
       "title": "Contact me"
+    },
+    "section": {
+      "about": "sobre mim",
+      "skills": "tecnologias",
+      "projects": "projetos",
+      "career": "experiência",
+      "contact": "contato"
     }
   }
 }

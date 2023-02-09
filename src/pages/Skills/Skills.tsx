@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { SectionTag } from '../../components/SectionTag';
 import * as S from './styles.css';
 
@@ -7,6 +8,8 @@ type Skills = {
 };
 
 const Skills: React.FC = () => {
+  const { t } = useTranslation();
+
   const skills: Skills[] = [
     { tech: 'HTML / CSS', level: 5 },
     { tech: 'Javascript', level: 5 },
@@ -22,7 +25,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <SectionTag num='02' title='tecnologias' idItem='tecnologias'>
+    <SectionTag num='02' title={t('section.skills')} idItem='tecnologias'>
       <S.Container>
         {skills.map((skill: Skills, index: number) => (
           <S.Row key={index}>

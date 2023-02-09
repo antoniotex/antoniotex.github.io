@@ -1,7 +1,7 @@
 {
   "translation": {
     "menu": {
-      "about": "about me",
+      "about": "about",
       "skills": "skills",
       "projects": "projects",
       "career": "career",
@@ -13,6 +13,13 @@
     },
     "contact": {
       "title": "Contact me"
+    },
+    "section": {
+      "about": "about me",
+      "skills": "my skills",
+      "projects": "my projects",
+      "career": "my working career",
+      "contact": "get in touch"
     }
   }
 }

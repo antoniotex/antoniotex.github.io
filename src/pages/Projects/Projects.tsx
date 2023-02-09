@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import { SectionTag } from '../../components/SectionTag';
 import { ProjectCard } from './components/ProjectCard';
 import * as S from './styles.css';
 import { Project } from './types';
 
 const Projects: React.FC = () => {
+  const { t } = useTranslation();
+
   const projects: Project[] = [
     {
       title: 'Portfolio',
@@ -82,7 +85,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <SectionTag num='03' title='projetos' idItem='projetos'>
+    <SectionTag num='03' title={t('section.projects')} idItem='projetos'>
       <S.Container>
         <S.SectionDescription>
           Uma pequena galeria com alguns projetos que gostei de desenvolver.
