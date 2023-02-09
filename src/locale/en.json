@@ -9,10 +9,10 @@
     },
     "home": {
       "subtitle": "Frontend Developer",
-      "description": "I'm a frontend developer, with experience working on projects that need to be reliable, scalable and responsive. Currently (2023) a mass layoff has hit me and I am open to new opportunities."
+      "description": "I'm a frontend developer, with experience working on projects that need to be reliable, scalable and responsive. Open to work."
     },
     "contact": {
-      "title": "Get in touch",
+      "title": "Contact me",
       "description": "I am open to new opportunities, both for long periods and for PJ / freelance contracts. Get in touch using the button below and let's develop something together!"
     },
     "section": {
@@ -20,7 +20,7 @@
       "skills": "my skills",
       "projects": "my projects",
       "career": "my working career",
-      "contact": "get in touch"
+      "contact": "contact"
     },
     "about": {
       "description": "Systems developer with more than 5 years of experience in large scale projects. Great experience with responsive development, mobile development, creation and integration of API`s, automated tests (unit, integration, e2e). \n\nKnowledge in:\n\n- Programming Languages: Javascript, TypeScript, C#\n- Frontend: HTML, CSS, SCSS, React, React Native, VueJS, Angular 2+, Redux, Styled Components, Storybook\n- Backend: NodeJS, .NET Core, SQL Server, MongoDB, Oracle, TypeORM, EF\n- Test: Jest, React Testing Library, Cypress"
