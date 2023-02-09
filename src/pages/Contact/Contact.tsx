@@ -10,12 +10,8 @@ const Contact: React.FC = () => {
   return (
     <SectionTag num='05' title={t('section.contact')} idItem='contato'>
       <S.Container>
-        <S.Description>
-          Estou aberto a novas oportunidades, tanto para períodos longos, quando
-          para contratos PJ / freelance. Entre em contato através do botão
-          abaixo e vamos desenvolver algo juntos!
-        </S.Description>
-        <ModalButton title='Entre em contato'>
+        <S.Description>{t('contact.description')}</S.Description>
+        <ModalButton title={t('contact.title')}>
           <ContactForm />
         </ModalButton>
       </S.Container>
