@@ -6,6 +6,13 @@
       "projects": "projetos",
       "career": "experiencia",
       "contact": "contato"
+    },
+    "home": {
+      "subtitle": "Desenvolvedor Frontend",
+      "description": "Sou desenvolvedor web/mobile frontend, com experiência atuando em projetos que necessitem se confiáveis, escaláveis e responsivos. Atualmente (2023), uma demissão em massa me atingiu e estou aberto a novas oportunidades."
+    },
+    "contact": {
+      "title": "Contact me"
     }
   }
 }

@@ -6,6 +6,13 @@
       "projects": "projects",
       "career": "career",
       "contact": "contact"
+    },
+    "home": {
+      "subtitle": "Frontend Developer",
+      "description": "I'm a frontend developer, with experience working on projects that need to be reliable, scalable and responsive. Currently (2023) a mass layoff has hit me and I am open to new opportunities."
+    },
+    "contact": {
+      "title": "Contact me"
     }
   }
 }
