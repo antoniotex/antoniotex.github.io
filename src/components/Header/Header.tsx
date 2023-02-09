@@ -29,7 +29,9 @@ const Header = () => {
   };
 
   const handleLanguage = () => {
-    changeLanguage(language === 'pt' ? 'en' : 'pt');
+    const newLanguage = language === 'pt' ? 'en' : 'pt';
+    changeLanguage(newLanguage);
+    localStorage.setItem('language', newLanguage);
   };
 
   useEffect(() => {

@@ -11,5 +11,5 @@ i18n.use(initReactI18next).init({
     },
     en: { ...enTranslations },
   },
-  lng: 'pt',
+  lng: localStorage.getItem('language') || 'pt',
 });
