@@ -67,6 +67,16 @@ export const Input = styled.input`
   background-color: none;
   padding: 5px;
 
+  :-webkit-autofill,
+  :-webkit-autofill:hover,
+  :-webkit-autofill:focus {
+    border: 1px solid ${({ theme }) => theme.colors.gray};
+    -webkit-text-fill-color: ${({ theme }) => theme.colors.text};
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    font-size: ${theme.font.sizes.xsmall};
+  }
+
   :focus {
     outline: 1px solid ${({ theme }) => theme.colors.primary};
   }
