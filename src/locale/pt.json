@@ -43,6 +43,30 @@
         "s2": "Desenvolvedor Fullstack",
         "funcao": "Desenvolvedor .NET Júnior"
       }
+    },
+    "contactForm": {
+      "title": "Deixe uma mensagem",
+      "name": "Nome",
+      "message": "Mensagem",
+      "messagePlaceholder": "Gostamos do seu trabalho e queremos você em nossa equipe",
+      "errors": {
+        "name": {
+          "required": "O campo nome é obrigatório",
+          "length": "O nome deve ter entre 2 e 100 caracteres"
+        },
+        "email": {
+          "required": "O campo e-mail é obrigatório",
+          "pattern": "Por favor, digite um e-mail válido"
+        }
+      },
+      "sendButton": {
+        "send": "Enviar",
+        "sending": "Enviando"
+      },
+      "submitted": {
+        "title": "Mensagem enviada",
+        "description": "Olá {{name}}, recebi sua mensagem e responderei o mais breve possível"
+      }
     }
   }
 }

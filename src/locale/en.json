@@ -43,6 +43,30 @@
         "s2": "Fullstack Developer",
         "funcao": ".NET Junior Developer"
       }
+    },
+    "contactForm": {
+      "title": "Write me",
+      "name": "Name",
+      "message": "Message",
+      "messagePlaceholder": "We like your work and we want you on our team",
+      "errors": {
+        "name": {
+          "required": "Name field is required",
+          "length": "Field name must be between 2 and 100 characters"
+        },
+        "email": {
+          "required": "E-mail field is required",
+          "pattern": "Please, enter a valid e-mail"
+        }
+      },
+      "sendButton": {
+        "send": "Enviar",
+        "sending": "Enviando"
+      },
+      "submitted": {
+        "title": "Message sent",
+        "description": "Hello {{name}}, I received your message and will reply as soon as possible"
+      }
     }
   }
 }

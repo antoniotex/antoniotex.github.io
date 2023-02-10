@@ -3,10 +3,13 @@ import * as S from './styles.css';
 import formspreeApi from '../../services/formspreeeApi';
 import { useContext, useEffect, useState } from 'react';
 import { AppContext } from '../../store/AppContext';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm: React.FC = () => {
   const [name, setName] = useState('');
   const { sendEmailMessage, loading, contact } = useContext(AppContext);
+
+  const { t } = useTranslation();
 
   const contactForm = useForm({
     mode: 'all',
@@ -26,9 +29,9 @@ const ContactForm: React.FC = () => {
 
   return contact.submitted ? (
     <S.SubmittedContainer>
-      <S.SubmittedTitle>Mensagem enviada</S.SubmittedTitle>
+      <S.SubmittedTitle>{t('contactForm.submitted.title')}</S.SubmittedTitle>
       <S.SubmittedDescription>
-        Olá {name}, recebi sua mensagem e responderei o mais breve possível =)
+        {t('contactForm.submitted.description', { name })} =)
       </S.SubmittedDescription>
     </S.SubmittedContainer>
   ) : (
@@ -37,23 +40,23 @@ const ContactForm: React.FC = () => {
         sendEmailMessage(data);
       })}
     >
-      <S.Title>Deixe uma mensagem</S.Title>
+      <S.Title>{t('contactForm.title')}</S.Title>
       <S.InputContainer>
-        <S.Label htmlFor='name'>Nome</S.Label>
+        <S.Label htmlFor='name'>{t('contactForm.name')}</S.Label>
         <S.Input
           id='name'
           type='text'
           placeholder='Ex.: Ana Lucia'
           disabled={loading}
           {...contactForm.register('name', {
-            required: 'O campo nome é obrigatório',
+            required: t('contactForm.errors.name.required') as string,
             minLength: {
               value: 2,
-              message: 'O nome deve ter entre 2 e 100 caracteres',
+              message: t('contactForm.errors.name.length'),
             },
             maxLength: {
               value: 100,
-              message: 'O nome deve ter entre 2 e 100 caracteres',
+              message: t('contactForm.errors.name.length'),
             },
           })}
         />
@@ -69,10 +72,10 @@ const ContactForm: React.FC = () => {
           placeholder='Ex.: anabanana@gmail.com'
           disabled={loading}
           {...contactForm.register('email', {
-            required: 'O campo endereço de e-mail é obrigatório',
+            required: t('contactForm.errors.email.required') as string,
             pattern: {
               value: /\S+@\S+\.\S+/,
-              message: 'Por favor, digite um e-mail válido',
+              message: t('contactForm.errors.email.pattern'),
             },
           })}
         />
@@ -81,10 +84,10 @@ const ContactForm: React.FC = () => {
         </S.ErrorMessage>
       </S.InputContainer>
       <S.InputContainer>
-        <S.Label htmlFor='message'>Mensagem</S.Label>
+        <S.Label htmlFor='message'>{t('contactForm.message')}</S.Label>
         <S.TextArea
           id='message'
-          placeholder='Ex.: Gostamos do seu trabalho e queremos você em nossa equipe =)'
+          placeholder={`Ex.: ${t('contactForm.messagePlaceholder')} =)`}
           disabled={loading}
           {...contactForm.register('message', {
             maxLength: {
@@ -98,7 +101,9 @@ const ContactForm: React.FC = () => {
         </S.ErrorMessage>
       </S.InputContainer>
       <S.SubmitButton disabled={!contactForm.formState.isValid || loading}>
-        {loading ? 'Enviando' : 'Enviar'}
+        {loading
+          ? t('contactForm.sendButton.sending')
+          : t('contactForm.sendButton.send')}
       </S.SubmitButton>
       <S.ErrorMessage
         hidden={!contact.errorMessage}
