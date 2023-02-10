@@ -539,6 +539,16 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   background-color: none;
   padding: 5px;
 
+  :-webkit-autofill,
+  :-webkit-autofill:hover,
+  :-webkit-autofill:focus {
+    border: 1px solid ${({theme:e})=>e.colors.gray};
+    -webkit-text-fill-color: ${({theme:e})=>e.colors.text};
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    font-size: ${J.font.sizes.xsmall};
+  }
+
   :focus {
     outline: 1px solid ${({theme:e})=>e.colors.primary};
   }
